@@ -23,6 +23,7 @@
 
 
 #list methods
+
 # list = [2,1,3]
 # list.append(4) #adds one element at the end [2,1,3,4]
 # print(list)
@@ -38,3 +39,5 @@
 #print(list)
 #list.pop(idx) #removes elemnt at idx
 #print(list)
+
+    
