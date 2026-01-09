@@ -48,3 +48,4 @@ list = ["A", "B", "D", "C", "A", "A"]
 list.sort()
 list.sort(reverse =True)
 print(list)
+
