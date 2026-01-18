@@ -18,21 +18,21 @@
 # print(info)   
 
 #nested directory
-students = {
-    "name" : "yashuu",
-    "subjects" : {
-        "phy" : 97,
-        "chem" : 98,
-        "math" : 95
-    }
-}
+# students = {
+#     "name" : "yashuu",
+#     "subjects" : {
+#         "phy" : 97,
+#         "chem" : 98,
+#         "math" : 95 
+#     }
+# }
 
 # print((students["subjects"]))
 # students.update({"age" : 20})
 # print(students)
-new_dict = {"city" : "rajkot"}
-students.update(new_dict)
-print(students)
+# new_dict = {"city" : "rajkot"}
+# students.update(new_dict)
+# print(students)
 
 
 
@@ -72,5 +72,28 @@ print(students)
 # print(yashvi["cat"]["cat"])
 
 
-#2 : 
+#2 : wAP to enter marks of 3 subjects from the user and store them in a dictionary. start with an empty dictionry
+#& add one by one . use subject name as key & marks as value
+
+# marks = {}
+
+# x = int(input("enter phy : "))
+# marks.update({"phy": x})
+
+# x = int(input("enter math : "))
+# marks.update({"math": x})
+
+# x = int(input("enter chem : "))
+# marks.update({"chem": x})
+
+# print(marks)
+
+
+# 3 figure out a way to store 9 & 9.0 as seperate values in the set.
+values = {
+    ("float",9.0),
+    ("int",9)
+}
+print(values)
+
 

@@ -28,9 +28,7 @@ print(len(collection))
 # # collection.remove(1)
 # print(len(collection))
 
-#collection = {"hello", "yashvi", "how are you", "vaibhav"}
-#print(collection.pop())
-
+ 
 # set1 = {1,2,3}
 # set2 = {2,3,4}
 
@@ -44,3 +42,5 @@ print(len(collection))
 # print(set1.intersection(set2))
 
 
+#practice que
+# figure out  a way to store 9 & 9.0 as separate values in the set(you can take help of built in data types)
