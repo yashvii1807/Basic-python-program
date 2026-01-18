@@ -78,18 +78,18 @@
 
     
 # 5 search for a number x in this tuple using loop
-tup = (1,4,9,16,25,36,49,64,81,100,36)
+# tup = (1,4,9,16,25,36,49,64,81,100,36)
  
-x = 36
-i = 0
-while i < len(tup):
-    if(tup[i] == x):
-        print("FOUND at idx" , i)
-        break
-    else:
-        print("Finding....")    
-    i += 1     
-print("end of loop")    
+# x = 36
+# i = 0
+# while i < len(tup):
+#     if(tup[i] == x):
+#         print("FOUND at idx" , i)
+#         break
+#     else:
+#         print("Finding....")    
+#     i += 1     
+# print("end of loop")    
 
 
 
@@ -106,3 +106,81 @@ print("end of loop")
 #         break
 #     i += 1
 # print("end of loop")    
+
+
+
+# i = 0
+# while i<= 15:
+#     if(i%2 !=0):
+#     # if(i %2 == 0):   
+#         i += 1
+#         continue
+#     print(i)
+#     i += 1
+
+
+
+
+
+
+# For loop
+
+#loops are  used for sequntial traversal. for traversing list, string , tuples etc...
+
+# names = ["y", "v", "s", "r"] 
+# for val in names:
+#     print(val)
+
+# num = [1,2,3,4,5,6,7,8,9]
+# for val in num:
+#     print(val)
+
+#iteratter upr kam krvu hoy to  while loop use thay
+#and datatypes on traves to for loop use thay
+
+# str = "yashuuu"
+# for char in str:
+#     print(char)
+# else:
+#     print("END")    
+
+
+
+#practice que
+#using for
+#1     print the element of the following list using a loop:
+
+# nums = [1,4,9,16,25,36,49,64,81,100]
+# for val in nums:
+#     print(val)
+
+
+#2   search for a numer x in this tuple using loop:
+nums = [1,4,9,16,25,36,49,64,81,100,49]
+
+# user = int(input("enter the number : "))
+# for i in nums:
+#     if(i == user):
+#         print("number found")
+
+#         break
+#     else:
+#         print("searching..")
+
+# x = 49
+# i = 0
+# for el in nums:
+#     if (el == x):
+#         print("number found at i", i)
+#     i += 1
+
+
+
+#RANGE() FUNCTION 
+#range function returns a sequence of numbers , starting from 0 by default , and incremnet by 1(by default), and stop before a specified number
+seq = range(10)
+for i in seq:
+    print(i)
+
+
+
