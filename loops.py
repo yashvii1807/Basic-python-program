@@ -156,7 +156,7 @@
 
 
 #2   search for a numer x in this tuple using loop:
-nums = [1,4,9,16,25,36,49,64,81,100,49]
+# nums = [1,4,9,16,25,36,49,64,81,100,49]
 
 # user = int(input("enter the number : "))
 # for i in nums:
@@ -178,9 +178,62 @@ nums = [1,4,9,16,25,36,49,64,81,100,49]
 
 #RANGE() FUNCTION 
 #range function returns a sequence of numbers , starting from 0 by default , and incremnet by 1(by default), and stop before a specified number
-seq = range(10)
-for i in seq:
-    print(i)
+# seq = range(10)
+# for i in seq:
+#     print(i)
 
+
+# #range(start?, stop, step?)
+# for i in range (10):
+#     print(i)
+
+
+# for i in range (2,10):
+#     print(i)
+
+# for i in range (2,21,2):
+#     print(i)
+
+
+#practice que
+# print numbers from 1 to 100 using for loop
+# for i in range (1,101):
+#     print(i)
+
+# print numbers from 100 to 1 using for loop
+# for i in range (100,0,-1):
+#     print(i)
+
+# print multiplication table of a number n using for loop
+# n = int(input("enter a number:"))
+
+# for i in range(1, 11):
+#     print(n * i)
+
+#pass statement
+# pass is null statement that does nothing . it is used as a placeholder for future code.
+
+# for i in range(5):
+#     pass
+# print("end")
+
+
+
+#write a program to find sum of first n numbers(using loops)
+# n = int(input("enter a number:"))
+# sum = 0
+# for i in range(1, n+1):
+#     sum += i
+# print("sum is:", sum)
+
+
+
+# wap to find factorial of a number n using loops
+# n = 5
+# factorial = 1
+# i = 1
+# for i in range(1, n+1):
+#     factorial *= i
+# print("factorial is:", factorial)
 
 
