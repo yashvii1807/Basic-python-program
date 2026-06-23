@@ -180,7 +180,7 @@
 
 
 
-#write a recursive function to print all elements in all list
+#write a recursive function to print all elements in a list
 #hint : use list & index as parameters.
 
 def print_list(list, idx=0):
