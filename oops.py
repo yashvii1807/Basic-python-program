@@ -97,14 +97,45 @@
 
 
 #Ex:
-class Car:
-    def __init__(self):
-        self.acc = False
-        self.brake = False
-        self.clutch = False
-    def start(self):
-        self.acc = True
-        self.clutch = True
-        print("car started...")
-car1 = Car()
-car1.start()        
+# class Car:
+#     def __init__(self):
+#         self.acc = False
+#         self.brake = False
+#         self.clutch = False
+#     def start(self):
+#         self.acc = True
+#         self.clutch = True
+#         print("car started...")
+# car1 = Car()
+# car1.start()        
+
+
+#Encapsulation
+#wrapping up of data and methods into a single unit is called encapsulation. (object-oriented programming)
+
+#Que:
+#1 create Account class with 2 attributes - balance & account number.create methods for debit , credit & print the balance.
+
+class Account:
+    def __init__(self, bal, acc):
+        self.balance = bal
+        self.account_number = acc
+
+    def debit(self, amount):
+        self.balance -= amount
+        print("Rs.",amount, "was debited from your account.")  
+        print("Your current balance is: Rs.", self.get_balance())  
+
+    def credit(self, amount):
+        self.balance += amount
+        print("Rs.",amount, "was credited to your account.")  
+        print("Your current balance is: Rs.", self.get_balance())  
+
+    def get_balance(self):
+        return self.balance
+    
+acc1 = Account(10000, "123456789")
+print(acc1.balance) # Output: 10000
+print(acc1.account_number) # Output: 123456789
+acc1.debit(200) # Output: Rs. 200 was debited from your
+acc1.credit(500) # Output: Rs. 500 was credited to your account.
