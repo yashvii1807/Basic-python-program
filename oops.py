@@ -116,26 +116,63 @@
 #Que:
 #1 create Account class with 2 attributes - balance & account number.create methods for debit , credit & print the balance.
 
-class Account:
-    def __init__(self, bal, acc):
-        self.balance = bal
-        self.account_number = acc
+# class Account:
+#     def __init__(self, bal, acc):
+#         self.balance = bal
+#         self.account_number = acc
 
-    def debit(self, amount):
-        self.balance -= amount
-        print("Rs.",amount, "was debited from your account.")  
-        print("Your current balance is: Rs.", self.get_balance())  
+#     def debit(self, amount):
+#         self.balance -= amount
+#         print("Rs.",amount, "was debited from your account.")  
+#         print("Your current balance is: Rs.", self.get_balance())  
 
-    def credit(self, amount):
-        self.balance += amount
-        print("Rs.",amount, "was credited to your account.")  
-        print("Your current balance is: Rs.", self.get_balance())  
+#     def credit(self, amount):
+#         self.balance += amount
+#         print("Rs.",amount, "was credited to your account.")  
+#         print("Your current balance is: Rs.", self.get_balance())  
 
-    def get_balance(self):
-        return self.balance
+#     def get_balance(self):
+#         return self.balance
     
-acc1 = Account(10000, "123456789")
-print(acc1.balance) # Output: 10000
-print(acc1.account_number) # Output: 123456789
-acc1.debit(200) # Output: Rs. 200 was debited from your
-acc1.credit(500) # Output: Rs. 500 was credited to your account.
+# acc1 = Account(10000, "123456789")
+# print(acc1.balance) # Output: 10000
+# print(acc1.account_number) # Output: 123456789
+# acc1.debit(200) # Output: Rs. 200 was debited from your
+# acc1.credit(500) # Output: Rs. 500 was credited to your account.
+
+
+# del keyword : used to delete object properties or objects itself.
+
+# del s1.name #deleting the name property of s1 object
+# del s1 #deleting the s1 object itself
+
+
+#example:
+# class Student:
+#     def __init__(self, name):
+#         self.name = name
+# s1 = Student("Rohit")
+# print(s1.name) # Output: Rohit    
+# del s1.name
+# print(s1.name)
+
+
+
+# private (like) attrubutes & methods
+
+# conceptual implementation in python:
+# private attributes & method are meant to be used only within the class and not accessible from outside the class. 
+
+#ex:
+class Account:
+    def __init__(self, acc_no, acc_pass):
+        self.acc_no = acc_no
+        self.__acc_pass = acc_pass
+
+    def reset_pass(self):
+        print(self.__acc_pass)
+
+acc1 = Account("12345", "abcde")          
+print(acc1.acc_no) # Output: 12345
+#print(acc1.__acc_pass) # Output: AttributeError: 'Account' object has no attribute '__acc_pass'
+print(acc1.reset_pass()) # Output: abcde
