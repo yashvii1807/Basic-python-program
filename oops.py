@@ -235,5 +235,14 @@ class car:
         print("car stopped...")
 
 class ToyotaCar(car):
-    def __init__(self, name):        
+    def __init__(self, name, type):   
+        super().__init__(type)     
         self.name = name
+        super().start() 
+       
+
+car1 = ToyotaCar("Camry", "Sedan")
+print(car1.type)        
+
+
+
