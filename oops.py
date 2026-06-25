@@ -164,15 +164,61 @@
 # private attributes & method are meant to be used only within the class and not accessible from outside the class. 
 
 #ex:
-class Account:
-    def __init__(self, acc_no, acc_pass):
-        self.acc_no = acc_no
-        self.__acc_pass = acc_pass
+# class Account:
+#     def __init__(self, acc_no, acc_pass):
+#         self.acc_no = acc_no
+#         self.__acc_pass = acc_pass
 
-    def reset_pass(self):
-        print(self.__acc_pass)
+#     def reset_pass(self):
+#         print(self.__acc_pass)
 
-acc1 = Account("12345", "abcde")          
-print(acc1.acc_no) # Output: 12345
-#print(acc1.__acc_pass) # Output: AttributeError: 'Account' object has no attribute '__acc_pass'
-print(acc1.reset_pass()) # Output: abcde
+# acc1 = Account("12345", "abcde")          
+# print(acc1.acc_no) # Output: 12345
+# #print(acc1.__acc_pass) # Output: AttributeError: 'Account' object has no attribute '__acc_pass'
+# print(acc1.reset_pass()) # Output: abcde
+
+
+#inheritance
+#when one class (child/derived)derives the properites & method of another class(parent/base)
+# 1. single inheritance: when a child class inherits from a single parent class.
+# 2. multiple inheritance: when a child class inherits from multiple parent classes.
+# 3. multilevel inheritance: when a child class inherits from a parent class, which in turn inherits from another parent class.
+
+
+# class car:
+#     @staticmethod
+#     def start():
+#         print("car started...")
+
+#     @staticmethod
+#     def stop():
+#         print("car stopped...")
+
+# class ToyotaCar(car):
+#     def __init__(self, name):        
+#         self.name = name
+
+# car1 = ToyotaCar("Camry")
+# car2=  ToyotaCar("Corolla")
+
+# print(car1.start())
+
+# # 2. multiple inheritance
+# class A:
+#     varA = "I am from class A"
+
+# class B:
+#     varB = "I am from class B"
+
+# class C(A, B):
+#     varC = "I am from class C" 
+# c1 = C()
+# print(c1.varA) # Output: I am from class A
+# print(c1.varB) # Output: I am from class B
+# print(c1.varC) # Output: I am from class C
+
+
+#Super() method: used to call the parent class constructor from the child class constructor.
+
+
+
