@@ -246,3 +246,12 @@ print(car1.type)
 
 
 
+#Class method
+#A class method  is bound to the class & receives the class as an implicit first argument. It can be called on the class itself or on an instance of the class.
+
+#note: static method cant access or modify class state & generally for utility.
+
+class Student:
+    @classmethod
+    def college(cls):
+        pass
