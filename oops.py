@@ -258,20 +258,36 @@
 
 
    #method-1 
-class person:
-    name = "anonymous"
+# class person:
+#     name = "anonymous"
 
-    #def changeName(self,name):
-        #person.name = name #this is class attribute so we can access it using class name
-        #self.name = name #this is instance attribute so we can access it using self
-        #self.__class__.name = "yashvi" #this is also class attribute so we can access it using self.__class__.name
+#     #def changeName(self,name):
+#         #person.name = name #this is class attribute so we can access it using class name
+#         #self.name = name #this is instance attribute so we can access it using self
+#         #self.__class__.name = "yashvi" #this is also class attribute so we can access it using self.__class__.name
 
-    @classmethod
-    def changeName(cls,name):
-        cls.name = name #this is class attribute so we can access it using cls
-            
-p1 = person()
-p1.changeName("yashvi")
-print(p1.name)
-print(person.name)
+#     @classmethod
+#     def changeName(cls,name):
+#         cls.name = name #this is class attribute so we can access it using cls
+
+# p1 = person()
+# p1.changeName("yashvi")
+# print(p1.name)
+# print(person.name)
+
+
+# 1. static method: this method is don't have access to class or instance attributes. it is used for utility purpose.
+# 2. class method: this method is bound to the class & receives the class as an implicit first argument.
+# 3. instance method: this method is bound to the instance of the class & receives the instance as an implicit first argument.
+
+
+#property decorator: we use @property decorator on any method in the class to use the method as a property.
+class Student:
+    def __init__(self, phy , chem, math):
+        self.phy = phy
+        self.chem = chem
+        self.math = math
+        self.percentage = str((self.phy + self.chem + self.math) / 3) + "%"
+stu1 = Student(90, 97, 99)
+print(stu1.percentage)        
 
