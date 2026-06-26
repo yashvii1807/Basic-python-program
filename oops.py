@@ -222,27 +222,27 @@
 
 
 
-class car:
-    def __init__(self, type):
-        self.type = type
+# class car:
+#     def __init__(self, type):
+#         self.type = type
 
-    @staticmethod
-    def start():
-        print("car started...")
+#     @staticmethod
+#     def start():
+#         print("car started...")
 
-    @staticmethod
-    def stop():
-        print("car stopped...")
+#     @staticmethod
+#     def stop():
+#         print("car stopped...")
 
-class ToyotaCar(car):
-    def __init__(self, name, type):   
-        super().__init__(type)     
-        self.name = name
-        super().start() 
+# class ToyotaCar(car):
+#     def __init__(self, name, type):   
+#         super().__init__(type)     
+#         self.name = name
+#         super().start() 
        
 
-car1 = ToyotaCar("Camry", "Sedan")
-print(car1.type)        
+# car1 = ToyotaCar("Camry", "Sedan")
+# print(car1.type)        
 
 
 
@@ -251,7 +251,27 @@ print(car1.type)
 
 #note: static method cant access or modify class state & generally for utility.
 
-class Student:
+# class Student:
+#     @classmethod
+#     def college(cls):
+#         pass
+
+
+   #method-1 
+class person:
+    name = "anonymous"
+
+    #def changeName(self,name):
+        #person.name = name #this is class attribute so we can access it using class name
+        #self.name = name #this is instance attribute so we can access it using self
+        #self.__class__.name = "yashvi" #this is also class attribute so we can access it using self.__class__.name
+
     @classmethod
-    def college(cls):
-        pass
+    def changeName(cls,name):
+        cls.name = name #this is class attribute so we can access it using cls
+            
+p1 = person()
+p1.changeName("yashvi")
+print(p1.name)
+print(person.name)
+
