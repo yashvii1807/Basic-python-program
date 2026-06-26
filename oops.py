@@ -308,3 +308,62 @@
 
 
 
+#polymorphism: when the same operater is allowed to have diferent meaning according to the context is called ploymorphism.
+
+# print(5 + 10) #addition = 15
+# print(type(5 + 10)) #addition = <class 'int'>
+
+# print("Hello" + "World") #concatenate = "HelloWorld"
+# print(type("Hello" + "World")) #concatenate = <class 'str'>
+
+# print([1, 2, 3] + [4, 5, 6]) #list merge = [1, 2, 3, 4, 5, 6]
+# print(type([1, 2, 3] + [4, 5, 6])) #list merge = <class 'list'>
+
+
+
+# class complex:
+#    def __init__(self, real, img):
+#         self.real = real
+#         self.img = img
+
+#    def showNumber(self):
+#      print(self.real, "i +", self.img, "j")
+
+#    def __add__(self , num2):
+#       newReal = self.real + num2.real
+#       newImg = self.img + num2.img
+#       return complex(newReal, newImg)
+   
+# num1 = complex(2, 3)
+# num1.showNumber()
+
+# num2 = complex(4, 5)
+# num2.showNumber()
+
+# num3 = num1 + num2
+# num3.showNumber()
+    
+
+
+#Q-1 define s circle class to create a ciecle with radius r using constructor. define an area() method of the class witch calculates the area of the circle.
+#  define a perimeter() method of the class which calculates the perimeter of the circle. 
+
+# class Circle:
+#    def __init__(self , radius):
+#         self.radius = radius
+
+#    def area(self):
+#     return (22/7) * self.radius ** 2
+
+#    def perimeter(self):
+#         return 2 * (22/7) * self.radius
+
+# c1 = Circle(21)
+# print("Area of circle is:", c1.area())
+# print("Perimeter of circle is:", c1.perimeter())
+
+
+
+# Q-2 Define a employee class with attributes role , department & salary. this class showDetails() method.
+# create an engineer class that inherits properties from employee &  attributes : name & age.
+
