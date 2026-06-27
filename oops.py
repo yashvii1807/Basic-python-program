@@ -392,3 +392,20 @@
 
 
 
+#create a calss called order witch stores item & its price use dunder function __gt__() to convey that :
+#order > order2 if price of order1 > price of order2
+
+
+# class Oder:
+#    def __init__(self, item, price):
+#       self.item = item
+#       self.price = price
+
+#    def __gt__(self, odr2):
+#       return self.price > odr2.price   
+# odr1 = Oder("chips", 20)
+# odr2 = Oder("tea", 15)
+
+# print (odr1 > odr2)
+
+
