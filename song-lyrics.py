@@ -24,4 +24,9 @@ def print_lyrics():
         print_line(line)
         time.sleep(delays[i]) 
 
-print_lyrics()                
+print_lyrics()               
+
+
+
+
+
